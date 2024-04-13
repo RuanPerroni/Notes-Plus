@@ -42,6 +42,11 @@ export function App() {
     setSearch(query);
   }
 
+  const filteredNotes =
+    search !== ""
+      ? notes.filter((note) => note.content.includes(search))
+      : notes;
+
   return (
     <div className="mx-auto max-w-6xl my-12 space-y-6">
       <img src={logo} alt="NLW Expert" />
@@ -59,7 +64,7 @@ export function App() {
       <div className="grid grid-cols-3 auto-rows-[250px] gap-6">
         <NewNoteCard onNoteCreated={onNoteCreated} />
 
-        {notes.map((note) => {
+        {filteredNotes.map((note) => {
           return <NoteCard key={note.id} note={note} />;
         })}
       </div>
