@@ -1,4 +1,4 @@
-<h1 align="center"> NotesPLus </h1>
+<h1 align="center"> NotesPlus </h1>
 
 ## 🚀 Tecnologias
 
