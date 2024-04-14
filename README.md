@@ -1,6 +1,6 @@
 <h1 align="center"> NotesPlus </h1>
 
-## 🚀 Tecnologias
+## 🚀 Technologies
 
 This project was developed with the following technologies:
 
